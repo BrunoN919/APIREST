@@ -1,6 +1,9 @@
 # API REST
 API para gerar autenticação e listar carros.
 
+NodeJS ver 13.1
+MongoDB ver 4.2.1
+
 Link para rotas Insomnia(Arquivo para Exportação)
 ```
 https://drive.google.com/open?id=1Qxn2Z1Ln2O8y_EUzZkpLZfqJQMk3LZoV
