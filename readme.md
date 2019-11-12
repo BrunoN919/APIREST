@@ -2,7 +2,7 @@
 API para gerar autenticação e listar carros.
 
 ## Instalação
-Para iniciar o projeto deverá estar instalado o NodeJS e o MongoDB
+Para iniciar o projeto deverá estar instalado o NodeJS 13.1 e o MongoDB 4.2.1
 
 Com o NodeJS instalado podemos dar os seguintes comandos para adicionar alguns pacotes requiridos na API
 Pacote Experess:
@@ -25,7 +25,11 @@ E por ultimo o pacote Json Web Token para a autenticação da API
 ```
 npm install jsonwebtoken
 ```
-## Rotas exemplo
+Link para rotas testas pelo Insomnia(Arquivo para Exportação)
+```
+https://drive.google.com/open?id=1Qxn2Z1Ln2O8y_EUzZkpLZfqJQMk3LZoV
+```
+## Rotas Exemplo
 
 ### Rotas de Usuário
 #### Metodo GET
