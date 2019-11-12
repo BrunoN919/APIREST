@@ -18,7 +18,6 @@ node app.js
 - Body-Parser
 - Mongoose
 
-
 ## Rotas de Exemplo
 
 ### Rotas de Usuário
