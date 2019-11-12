@@ -1,31 +1,8 @@
 # API REST
 API para gerar autenticação e listar carros.
 
-## Instalação
-Para iniciar o projeto deverá estar instalado o NodeJS 13.1 e o MongoDB 4.2.1
-
-Com o NodeJS instalado podemos dar os seguintes comandos para adicionar alguns pacotes requiridos na API
-Pacote Experess:
 ```
-npm install express
-```
-Pacote Mongoose para trabalhar com o MongoDB
-```
-npm install mongoose
-```
-Pacote Body-Parser para podermos enviar alguns parametros pelo header
-```
-npm install body-parser
-```
-Pacote BcryptJS para podemors usar um criptografia para salvar senhas
-```
-npm install bcryptjs
-```
-E por ultimo o pacote Json Web Token para a autenticação da API
-```
-npm install jsonwebtoken
-```
-Link para rotas testas pelo Insomnia(Arquivo para Exportação)
+Link para rotas Insomnia(Arquivo para Exportação)
 ```
 https://drive.google.com/open?id=1Qxn2Z1Ln2O8y_EUzZkpLZfqJQMk3LZoV
 ```
@@ -33,8 +10,16 @@ https://drive.google.com/open?id=1Qxn2Z1Ln2O8y_EUzZkpLZfqJQMk3LZoV
 ```
 node app.js
 ```
+### Pacotes usados no Projeto
 
-## Rotas Exemplo
+- Express
+- Json Web Token (jwt)
+- Bcrypt
+- Body-Parser
+- Mongoose
+
+
+## Rotas de Exemplo
 
 ### Rotas de Usuário
 #### Metodo GET
@@ -87,7 +72,7 @@ Exemplo:
 http://localhost:3000/carros/5dc9bc4f3955a52cfc65b768
 ```
 
-#### Rota para dar update em um carro da lista por id(Requer Autenticação):
+#### Rota para dar update em um carro da lista por ID(Requer Autenticação):
 ##### Metodo PUT
 Exemplo de Rota:
 ```
@@ -98,7 +83,7 @@ Exemplo:
 http://localhost:3000/carros/5dc9bc4f3955a52cfc65b768
 ```
 
-#### Rota para deletar um carro por id(Requer Autenticação):
+#### Rota para deletar um carro por ID(Requer Autenticação):
 ##### Metodo DELETE
 Exemplo de Rota:
 ```

@@ -20,7 +20,7 @@ router.get('/lista', (req,res) => {
 
     User.find({} , (erro, dados)=>{
         if (erro) {
-            res.statusCode = 417;
+            res.statusCode = 500;
             res.send();
         }
         res.statusCode = 200;

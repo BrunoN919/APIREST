@@ -28,7 +28,7 @@ router.post('/register', (req, res) => {
                 throw erro;
             }
             // Aconteceu alguma falha
-            res.statusCode = 417;
+            res.statusCode = 500;
             res.send();
         });
     }
@@ -39,7 +39,7 @@ router.get('/lista', (req,res) => {
     if(req.userId){
         Carro.find({},(erro, dados)=>{
             if (erro) {
-                res.statusCode = 417;
+                res.statusCode = 500;
                 res.send();
             }
             res.statusCode = 200;
@@ -56,7 +56,7 @@ router.get('/:id', (req,res) => {
             res.json(carro);
         }).catch((erro) =>{
             if (erro) {
-                res.status = 417;
+                res.status = 500;
                 res.send();
                 throw erro;
             }
@@ -77,7 +77,7 @@ router.delete('/:id', (req, res) =>{
             }
         }).catch((erro) =>{
             if (erro) {
-                res.status = 417;
+                res.status = 500;
                 res.send();
                 throw erro;
             }
@@ -107,7 +107,7 @@ router.put('/:id', (req, res) =>{
                 }).catch((erro) => {
                     // Aconteceu alguma falha
                     if (erro) {
-                        res.statusCode = 417;
+                        res.statusCode = 500;
                         res.send();
                         throw erro;
                     }
@@ -115,14 +115,14 @@ router.put('/:id', (req, res) =>{
 
             } else {
                 if (condition) {
-                    res.status = 417;
+                    res.status = 500;
                     res.send();
                     throw erro;
                 }
             }
         }).catch((erro) => {
         if (erro) {
-            res.status = 417;
+            res.status = 500;
             res.send();
             throw erro;
         }
