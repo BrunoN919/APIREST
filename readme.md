@@ -29,6 +29,11 @@ Link para rotas testas pelo Insomnia(Arquivo para Exportação)
 ```
 https://drive.google.com/open?id=1Qxn2Z1Ln2O8y_EUzZkpLZfqJQMk3LZoV
 ```
+## Executar Projeto
+```
+node app.js
+```
+
 ## Rotas Exemplo
 
 ### Rotas de Usuário
